@@ -1,0 +1,31 @@
+digital_marketing_dashboard/
+│
+├── app.py
+├── config.py
+├── requirements.txt
+├── README.md
+│
+├── templates/
+│   ├── index.html
+│   ├── login.html
+│   ├── register.html
+│   ├── notifications.html
+│
+├── static/
+│   ├── styles.css
+│
+├── models/
+│   ├── user.py
+│
+├── routes/
+│   ├── auth.py
+│   ├── dashboard.py
+│   ├── profile.py
+│   ├── settings.py
+│   ├── export.py
+│
+└── services/
+    ├── google_analytics.py
+    ├── twitter.py
+    ├── facebook.py
+    ├── instagram.py

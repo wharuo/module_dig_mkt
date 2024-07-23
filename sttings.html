@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Settings</h1>
+        <form method="POST">
+            <div>
+                <label>Google Analytics Key File Location:</label>
+                <input type="text" name="ga_key_file_location" value="{{ settings.google_analytics.key_file_location }}">
+            </div>
+            <div>
+                <label>Google Analytics View ID:</label>
+                <input type="text" name="ga_view_id" value="{{ settings.google_analytics.view_id }}">
+            </div>
+            <div>
+                <label>Twitter Consumer Key:</label>
+                <input type="text" name="twitter_consumer_key" value="{{ settings.twitter.consumer_key }}">
+            </div>
+            <div>
+                <label>Twitter Consumer Secret:</label>
+                <input type="text" name="twitter_consumer_secret" value="{{ settings.twitter.consumer_secret }}">
+            </div>
+            <div>
+                <label>Twitter Access Token:</label>
+                <input type="text" name="twitter_access_token" value="{{ settings.twitter.access_token }}">
+            </div>
+            <div>
+                <label>Twitter Access Token Secret:</label>
+                <input type="text" name="twitter_access_token_secret" value="{{ settings.twitter.access_token_secret }}">
+            </div>
+            <div>
+                <label>Twitter Handle:</label>
+                <input type="text" name="twitter_handle" value="{{ settings.twitter.handle }}">
+            </div>
+            <div>
+                <label>Facebook Access Token:</label>
+                <input type="text" name="facebook_access_token" value="{{ settings.facebook.access_token }}">
+            </div>
+            <div>
+                <label>Instagram Access Token:</label>
+                <input type="text" name="instagram_access_token" value="{{ settings.instagram.access_token }}">
+            </div>
+            <div>
+                <button type="submit">Save</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
